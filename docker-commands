@@ -1,2 +1,12 @@
-docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm
+docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm(delete all the images which are running more than a week)
+docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rmi
 docker ps -a -q(list all the docker container id)
+
+
+
+what is a dangling image
+===============================
+Dangling images, are layers that have no relationship to any tagged images. They no longer serve a purpose and consume disk space.
+to remove the dangling images need to run below command
+docker image prune -a
+docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rmi
