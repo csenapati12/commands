@@ -6,8 +6,14 @@ docker ps -a -q(list all the docker container id)
 
 what is a dangling image
 ===============================
-Dangling images, are layers that have no relationship to any tagged images. They no longer serve a purpose and consume disk space.
+Dangling images, are layers that have no relationship to any tagged images. 
+So the old images you have becomes the "dangling image". 
+Those old image are the ones that are untagged and displays "<none>" on its name when you run docker images.
+They no longer serve a purpose and consume disk space.
 to remove the dangling images need to run below command
+
+
+
 docker image prune -a
 docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rmi
 docker system prune -a(delete all the images except the runnning the container)
