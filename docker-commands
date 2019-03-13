@@ -17,3 +17,8 @@ to remove the dangling images need to run below command
 docker image prune -a
 docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rmi
 docker system prune -a(delete all the images except the runnning the container)
+
+
+
+Whether we can restrict file level permission in repo?
+===========================================================
