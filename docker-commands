@@ -22,3 +22,4 @@ docker system prune -a(delete all the images except the runnning the container)
 
 Whether we can restrict file level permission in repo?
 ===========================================================
+Whether we can have multiple steps in declarative pipeline
