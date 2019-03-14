@@ -5,3 +5,9 @@ How the developer will get those changes in the feature branch?
 command:--->
 git pull(will take the latest changes from the repo)
 git merge feature origin/master or develop
+
+
+Include in polling?	
+ 		Include in changelog?
+    
+    Why required
