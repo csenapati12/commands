@@ -6,6 +6,11 @@ command:--->
 git pull(will take the latest changes from the repo)
 git merge feature origin/master or develop
 
+git rebase
+================
+git checkout feature
+git rebase -i master
+
 
 Include in polling?	
  		Include in changelog?
