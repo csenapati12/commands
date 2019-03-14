@@ -1,0 +1,7 @@
+what is git rebase and git merge
+
+one developer working on the feature branch, mean while there is some change in the master/develop branch, 
+How the developer will get those changes in the feature branch?
+command:--->
+git pull(will take the latest changes from the repo)
+git merge feature origin/master or develop
