@@ -2,3 +2,4 @@
    No, We can't use, its against the syntax
 2. Difference between scripted and declarative pipeline, which is more used or adviced to use 
 3. In declarative pipeline agent any and agent none, how can we differentiate
+4. Whether you can use multiple agents in a declarative/scripted pipeline(Y/N), if yes syntax please
