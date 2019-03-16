@@ -1,6 +1,8 @@
 docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm(delete all the images which are running more than a week)
 docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rmi
 docker ps -a -q(list all the docker container id)
+docker ps -a | grep "Exited" | awk "{print}"  --->to list download Exited container
+docker images | grep "<none>" | awk "{print \$3}"  -->list down not used commands
 
 
 
@@ -17,9 +19,3 @@ to remove the dangling images need to run below command
 docker image prune -a
 docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rmi
 docker system prune -a(delete all the images except the runnning the container)
-
-
-
-Whether we can restrict file level permission in repo?
-===========================================================
-Whether we can have multiple steps in declarative pipeline
