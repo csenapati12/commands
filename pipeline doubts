@@ -6,3 +6,14 @@
     Else by default it will take the default master
 4. Whether you can use multiple agents in a declarative/scripted pipeline(Y/N), if yes syntax please
     You can have multiple agents in pipeline job
+5. Whether u can use docker images as your agent/node(Y/N), if yes syntax please
+   Yes We can use
+   agent {
+    docker {
+       image 'maven:3-alpine'
+     }
+   }
+ 6. Why label used in declarative pipeline
+ 7. Why node is used in declarative pipeline
+
+   
