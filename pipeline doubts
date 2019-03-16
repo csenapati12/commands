@@ -1,0 +1,3 @@
+1. Whether we can have multiple steps in a stage in declarative pipeline
+2. Difference between scripted and declarative pipeline, which is more used or adviced to use 
+3. in declarative pipeline agent any and agent none, how can we differentiate
