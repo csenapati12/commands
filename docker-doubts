@@ -3,3 +3,8 @@
 3. What is unused docker images and command to list down unused docker images
 4. command to list all terminated containers
 5. What is a dangling image and what is an unused image?(https://stackoverflow.com/questions/45142528/docker-what-is-a-dangling-image-and-what-is-an-unused-image)
+An unused image means that it has not been assigned or used in a container. For example, when running docker ps -a - it will list all of your exited 
+and currently running containers. Any images shown being used inside any of containers are a "used image".
+
+On the other hand, a dangling image just means that you've created the new build of the image, but it wasn't given a new name. 
+So the old images you have becomes the "dangling image". Those old image are the ones that are untagged and displays "<none>" on its name when you run docker images
