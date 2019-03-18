@@ -2,3 +2,4 @@
 2. How to pass environmental parameter/value to the docker containers
 3. What is unused docker images and command to list down unused docker images
 4. command to list all terminated containers
+5. What is a dangling image and what is an unused image?(https://stackoverflow.com/questions/45142528/docker-what-is-a-dangling-image-and-what-is-an-unused-image)
